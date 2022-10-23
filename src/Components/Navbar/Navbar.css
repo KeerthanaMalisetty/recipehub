@@ -1,0 +1,67 @@
+.navbar {
+    display: flex;
+    flex-direction: row;
+    height: 60px;
+    background-color: blue;
+    justify-content: space-between;
+}
+
+ul {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+    margin: 0;
+    margin-right: 50px;
+    font-size: 30px;
+}
+
+.homebtn:hover {
+    background-color: white;
+}
+
+.catbtn:hover {
+    background-color: white;
+}
+
+
+
+
+
+
+
+
+
+/* return (< div > <Navbar /> <div className='mealctr' > <div className='cat' > {
+        categories.map((item)=> {
+                return (<button onClick= {
+                        ()=> setCategory(item.strCategory)
+                    }
+
+                    > {
+                        item.strCategory
+                    }
+
+                    </button>)
+            })
+    }
+
+    </div> <div className='maincmpt' > {
+        meals.map((meal)=> {
+                return (<div className='mealcard' > <img src= {
+                        meal.strMealThumb
+                    }
+
+                    alt="" /> <h3> {
+                        meal.strMeal
+                    }
+
+                        {
+                        meal.idMeal
+                    }
+
+                    </h3> <button>Get Recipe</button> </div>)
+            })
+    }
+
+    </div> </div> </div >)
+} */
