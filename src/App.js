@@ -1,6 +1,7 @@
-import logo from './logo.svg';
+
 import './App.css';
-import { Routes, Route, Link, useNavigate } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
+import React from 'react';
 import { Home } from './Components/Home/Home'
 import { Categories } from './Components/Categories/Categories'
 
