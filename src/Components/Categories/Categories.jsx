@@ -41,34 +41,36 @@ export function Categories() {
             case ("meals"):
                 return (
                     <div className='maincmpt'>
-                        {meals.map((meal) => {
+                        {meals ? meals.map((meal) => {
                             return (
 
-                                <div className='mealcard'>
-                                    <img src={meal.strMealThumb} alt="" />
-                                    <h3>{meal.strMeal} {meal.idMeal}</h3>
-                                    <button onClick={() => {
-                                        setComponent("recipe")
-                                        setId(meal.idMeal)
-                                    }}>Get Recipe</button>
+                                <div className='mealcard' onClick={() => {
+                                    setComponent("recipe")
+                                    setId(meal.idMeal)
+                                }}>
+
+                                    <img className='mealimg' src={meal.strMealThumb} alt="" />
+                                    <h3>{meal.strMeal}</h3>
                                 </div>
 
                             )
-                        })}
+                        }) : <p> Loading</p>}
                     </div>
                 )
             case ("recipe"):
                 return (
-                    <div className='mealrecipe'>
-                        <img src={meal.strMealThumb} alt="" className='recipeimg' />
-                        <p>
-                            <h3>{meal.strMeal}</h3>
-                            <p>
-                                <h3>Instructions </h3>
-                                {meal.strInstructions}
-                            </p>
-                        </p>
-                    </div>
+                    <div className='mealrecipectr'>
+
+                        <div className='recipeimgctr'>
+                            <img src={meal.strMealThumb} alt="" className='imgrecipe' />
+                        </div>
+
+                        <div className='recipedetails'>
+                            <h3 className='instructions'>Instructions </h3>
+                            <p className='mealinstr'>  {meal.strInstructions}</p>
+                        </div >
+
+                    </div >
                 )
         }
     }
@@ -80,10 +82,10 @@ export function Categories() {
             <Navbar />
             <div className='mealctr'>
                 <div className='cat'>
+                    <p></p>
                     {categories.map((item) => {
                         return (
-
-                            <button onClick={() => {
+                            <button classname="catbtn" onClick={() => {
                                 setCategory(item.strCategory);
                                 setComponent("meals")
                             }}>{item.strCategory}</button>
@@ -92,8 +94,11 @@ export function Categories() {
                     })}
                 </div>
                 <div className='mealcmpnt'>
-                    <h2>{category} meals</h2>
+                    {component === "meals" ? <h2>{category} meals</h2> : <h2 >{meal.strMeal}</h2>}
+
+
                     {render()}
+
                 </div>
 
             </div>

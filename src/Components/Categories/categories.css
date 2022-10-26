@@ -1,28 +1,36 @@
 .mealctr {
-    height: 14.93cm;
+    height: 14.9cm;
     display: flex;
     flex-direction: row;
-    overflow: hidden;
-    /* background-color: aqua; */
 }
 
 
+/* categories cmpt */
 
 .cat {
     width: 15%;
+    height: 100%;
     display: flex;
     flex-direction: column;
-    background-color: bisque;
-
+    align-items: center;
+    background-color: rgba(240, 76, 76, 0.842);
 }
 
 button {
+    position: relative;
+    background: none;
+    border: none;
+    outline: none;
     margin: 0;
     padding: 0;
-    font-size: 18px;
-    width: 100%;
-    height: 1cm;
+    font-size: 20px;
+    width: 70%;
+    text-align: left;
+    height: 38px;
+    margin-left: 25px;
 }
+
+
 
 .maincmpt {
     width: 100%;
@@ -30,36 +38,116 @@ button {
     padding: 0;
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
-
-    margin-top: 50px;
+    gap: 30px;
+    row-gap: 30px;
+    margin-top: 40px;
     /* background-color: brown; */
 }
 
 .mealcmpnt {
-    margin-left: 2cm;
+    margin-left: 1.5cm;
     width: 85%;
     overflow-y: scroll;
 }
 
 .mealcard {
-    width: 15rem;
-    height: fit-content;
+    width: 20rem;
+    height: 21rem;
     display: flex;
     margin-right: 10px;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
+    cursor: pointer;
+    box-shadow: 3px 6px 20px 1.5px rgba(116, 114, 114, 0.315);
 }
 
-img {
+
+.mealimg {
+    width: 100%;
+    height: 17rem;
+}
+
+.recipebtn {
+    background-color: aquamarine;
+    width: 45%;
+    height: fit-content;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    margin: 0;
+    margin-top: 10px;
+    width: 100%;
+    height: 4rem;
+    padding: 0;
+    padding-left: 15px;
+    /* margin-bottom: 15px; */
+}
+
+h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 33px;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+
+/* recipe instructions  */
+
+
+.recipename,
+.instructions,
+.mealinstructions {
+    margin: 0;
+    padding: 0;
+    height: fit-content;
+}
+
+.recipename {
+    margin-top: 10px;
+}
+
+.instructions {
+    margin-top: 0px;
+    font-size: 24px;
+
+}
+
+.mealinstructions {
+    height: 70%;
+    overflow: hidden;
+}
+
+.imgrecipe {
     width: 100%;
     height: 100%;
 }
 
-.mealrecipe {
+.recipeimgctr {
+    width: 40%;
+    height: 88%;
+    margin-top: 15px;
+    margin-left: 30px;
+}
+
+.mealrecipectr {
     display: flex;
     flex-direction: row;
-    width: 100%;
-    height: 60%;
+    width: 90%;
+    height: 22rem;
+    margin-top: 40px;
+    box-shadow: 4px 8px 20px 2px rgba(172, 170, 170, 0.582);
+    overflow-x: hidden;
+}
+
+.recipedetails {
+    width: 52%;
+    height: 88%;
+    margin-top: 15px;
+    margin-left: 25px;
+    overflow-y: scroll;
 }

@@ -1,0 +1,46 @@
+.homectr {
+    display: flex;
+    flex-direction: row;
+}
+
+.childimg {
+    width: 52%;
+    height: 400px;
+    margin-left: 50px;
+    margin-top: 60px;
+}
+
+.childctr {
+    width: 40%;
+    margin-left: 20px;
+}
+
+.getstarted {
+    width: 40%;
+    height: 40px;
+    margin-top: 40px;
+    margin-left: 175px;
+    background-color: rgba(240, 76, 76, 0.842);
+    border: none;
+    outline: none;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 25px;
+}
+
+.title {
+    font-size: 75px;
+    margin: 0;
+    padding: 0;
+    margin-left: 120px;
+    margin-top: 120px;
+}
+
+.caption {
+    margin: 0;
+    padding: 0;
+    margin-left: 125px;
+    margin-top: 15px;
+    font-size: 20px;
+    font-style: italic;
+}

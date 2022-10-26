@@ -5,7 +5,7 @@ export function Navbar() {
     const navigate = useNavigate();
     return (
         <div className='navbar'>
-            <h1>RecipeHub</h1>
+            <h1 className='navtitle'>recipehub</h1>
             <ul>
                 <li className='homebtn' onClick={() => navigate('/')}>Home</li>
                 <li className='catbtn' onClick={() => navigate('/categories')}>Categories</li>
