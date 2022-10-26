@@ -3,7 +3,7 @@ import { Navbar } from '../Navbar/Navbar'
 import './categories.css'
 export function Categories() {
     const [categories, setCategories] = useState([]);
-    const [category, setCategory] = useState("Seafood");
+    const [category, setCategory] = useState("Beef");
     const [meals, setMeals] = useState([])
     const [meal, setMeal] = useState([]);
     const [id, setId] = useState();
