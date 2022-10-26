@@ -82,7 +82,7 @@ export function Categories() {
             <Navbar />
             <div className='mealctr'>
                 <div className='cat'>
-                    <p></p>
+                    <h4>Filter</h4>
                     {categories.map((item) => {
                         return (
                             <button classname="catbtn" onClick={() => {
