@@ -37,4 +37,5 @@ li {
     padding: 10px;
     height: fit-content;
     border-radius: 10px;
+    cursor: pointer;
 }

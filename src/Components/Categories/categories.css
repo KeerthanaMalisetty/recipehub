@@ -28,6 +28,7 @@ button {
     text-align: left;
     height: 38px;
     margin-left: 20px;
+    cursor: pointer;
 }
 
 
