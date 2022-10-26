@@ -27,7 +27,7 @@ button {
     width: 70%;
     text-align: left;
     height: 38px;
-    margin-left: 25px;
+    margin-left: 20px;
 }
 
 
@@ -84,7 +84,6 @@ h3 {
     height: 4rem;
     padding: 0;
     padding-left: 15px;
-    /* margin-bottom: 15px; */
 }
 
 h2 {
